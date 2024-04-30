@@ -49,10 +49,10 @@
     <!-- END LOADER -->
 
     <!-- Start header -->
-    <header class="top-header">
+	<header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                <a hidden class="navbar-brand" href="index.html"><img src="" alt="image"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -61,14 +61,89 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li><a class="nav-link" href="reaserch.html">Reaserch</a></li>
-						<li><a class="nav-link" href="news.html">News</a></li>
-						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+                        <li class="nav-item dropdown"> <!-- Added dropdown class to create a dropdown menu -->
+                            <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" href="about.html">Our School</a> 
+                                <a class="dropdown-item" href="mission-vision.html">Mission  & Vision</a> 
+                                <a class="dropdown-item">PES</a>
+                                <a class="dropdown-item" href="chairman-message.html">Chairman Message</a>
+                                <a class="dropdown-item" href="correspondent-message.html">Correspondent Message</a>
+                                <a class="dropdown-item">Principle Message</a>
+                                <a class="dropdown-item" href="academic-director-message.html">Academic Director Message</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Academics
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <a class="dropdown-item" href="curriculum.html">Circulum</a> 
+                                <a class="dropdown-item" href="faculty.html">Faculty</a> 
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="disclosureDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mandatory Disclosure
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="disclosureDropdown">
+                                <a class="dropdown-item" href="#">CBSE</a> 
+                                <a class="dropdown-item" href="#">Documents Information</a> 
+                                <a class="dropdown-item" href="results-academics.html">Results & Academics</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="campusDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Campus Life
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="campusDropdown">
+                                <a class="dropdown-item" href="inter-house.html">Inter House</a> 
+                                <a class="dropdown-item" href="special-assemblies.html">Special Assembles</a> 
+                                <a class="dropdown-item">Workshops</a>
+                                <a class="dropdown-item" href="student-counsels.html">Student Counsel</a>
+                                <a class="dropdown-item" href="scouts-guides.html">Scouts & Guides</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="infraDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Infrastructure
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="infraDropdown">
+                                <a class="dropdown-item" href="#">Our Campus</a>
+                                <a class="dropdown-item" href="#">Student Engagement Facilities</a> 
+                                <a class="dropdown-item" href="sports-facility.html">Sports Facilities</a> 
+                                <a class="dropdown-item" href="transport-facility.html">Transport Facilities</a>
+                                <a class="dropdown-item" href="hostel-facility.html">Hostel Facilities</a>
+                                <a class="dropdown-item" href="medical-facility.html">Medical Facilities</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sports 
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="sportsDropdown">
+                                <a class="dropdown-item" href="sports.html">Sports & LAPS</a> 
+                                <a class="dropdown-item" href="sports.html">Sports & Offered</a> 
+                                <a class="dropdown-item" href="sports.html">Sports Events</a>
+                                <a class="dropdown-item" href="sports.html">Sports Acheivements</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Media
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="mediaDropdown">
+                                <a class="dropdown-item" href="gallery.html">Gallery</a> 
+                                <a class="dropdown-item" href="testimonials.html">Testimonials</a> 
+                            </div>
+                        </li>
+                        <li><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                        <li><a class="nav-link" href="#">Alumini</a></li>
                     </ul>
                 </div>
-                <div class="search-box">
+                <div hidden class="search-box">
                     <input type="text" class="search-txt" placeholder="Search">
                     <a class="search-btn">
                         <img src="images/search_icon.png" alt="#" />
