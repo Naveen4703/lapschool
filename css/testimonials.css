@@ -43,6 +43,9 @@ a:link,a:active,a:visited,a:hover{
 	background:#49556B;
     grid-column: 3/4;
     grid-row: 1/2;
+	overflow-y: scroll;
+	scrollbar-width: thin;          /* "auto" or "thin" */
+	scrollbar-color: rgba(76, 76, 253, 0.337) #022147;   /* scroll thumb and track */ 
 }
 .div3
 {

@@ -209,7 +209,7 @@
 					   <li><a href="special-assemblies.html"><span class="icon"><img src="images/i4.png" alt="#" /></span><span>Events</span></a></li>
 					   <li><a target="_blank" href="https://maps.app.goo.gl/7NvTthbHanUbbd8t5"><span class="icon"><img src="images/i5.png" alt="#" /></span><span>Location</span></a></li>
 					   <li><a href="tel:+919849141742"><span class="icon"><img src="images/i7.png" alt="#" /></span><span>Call us</span></a></li>
-					   <li><a href="mailto:lapschoolgdr@gmail.com"><span class="icon"><img src="images/i6.png" alt="#" /></span><span>Email</span></a></li>
+					   <li><a href="mailto:info@lapschool.org"><span class="icon"><img src="images/i6.png" alt="#" /></span><span>Email</span></a></li>
 					</ul>
 				 </div>
 			  </div>
@@ -379,10 +379,56 @@
                             </div>
                             <div class="col-lg-5 col-md-8 col-sm-12">
                                 <div class="full blog_img_popular">
-                                    <iframe width="660" height="430" style="border-radius: 12px;" src="https://www.youtube.com/embed/vgqwLjdJMnk?si=Vyvk-ue6EV9BaQOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                    </iframe>
-                                    <div style="margin: auto"><iframe src="http://www.youtube.com/embed/ItJbWBYNipM?yt:stretch=16:9&vq=hd1080p&loop=0&color=red&iv_load_policy=3&rel=0&showinfo=0&autohide=0&controls=1" width="660" height="430" allowtransparency="true" frameborder="0" ></iframe></div>
-                                   <p></p>
+                                    
+                                    <iframe id="existing-iframe-example"
+                                    width="680" height="430"
+                                    src="https://www.youtube.com/embed/ItJbWBYNipM?si=TaRZ3acfRrD7XnYx&enablejsapi=1"
+                                    frameborder="0"
+                                    style="border: solid 4px #37474F"></iframe>
+
+                                    <script type="text/javascript">
+                                    var tag = document.createElement('script');
+                                    tag.id = 'iframe-demo';
+                                    tag.src = 'https://www.youtube.com/iframe_api';
+                                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                                    var player;
+                                    function onYouTubeIframeAPIReady() {
+                                        player = new YT.Player('existing-iframe-example', {
+                                            events: {
+                                            'onReady': onPlayerReady,
+                                            'onStateChange': onPlayerStateChange
+                                            }
+                                        });
+                                    }
+                                    function onPlayerReady(event) {
+                                        document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+                                    }
+                                    function changeBorderColor(playerStatus) {
+                                        var color;
+                                        if (playerStatus == -1) {
+                                        color = "#37474F"; // unstarted = gray
+                                        } else if (playerStatus == 0) {
+                                        color = "#FFFF00"; // ended = yellow
+                                        } else if (playerStatus == 1) {
+                                        color = "#33691E"; // playing = green
+                                        } else if (playerStatus == 2) {
+                                        color = "#DD2C00"; // paused = red
+                                        } else if (playerStatus == 3) {
+                                        color = "#AA00FF"; // buffering = purple
+                                        } else if (playerStatus == 5) {
+                                        color = "#FF6DOO"; // video cued = orange
+                                        }
+                                        if (color) {
+                                        document.getElementById('existing-iframe-example').style.borderColor = color;
+                                        }
+                                    }
+                                    function onPlayerStateChange(event) {
+                                        changeBorderColor(event.data);
+                                    }
+                                    </script>
+
                                  </div>
                              </div>
                             </div>
@@ -516,7 +562,7 @@
 						     <h3>Contact us</h3>
 							 <ul class="full">
 							   <li><img src="images/i5.png"><span>1/7/301, Sarada Nagar, Chilakuru</span></li>
-							   <li><img src="images/i6.png"><span>lapschoolgdr@gmail.com</span></li>
+							   <li><img src="images/i6.png"><span>info@lapschool.org</span></li>
 							   <li><img src="images/i7.png"><span><a href="tel:+919849141742">+91 9849141742</a></span></li>
                                <li><a style=" font-weight: bolder;" target="_blank" href="https://www.instagram.com/lapsgdr"><img src="images/logos/instagram.png"><span>Instagram</span></a></li>
                                <li><a style=" font-weight: bolder;" target="_blank" href="https://twitter.com/lapschoolgdr"><img style=" background-color: #fff !important;" src="images/logos/twitter.png"><span>Twitter</span></a></li>

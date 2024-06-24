@@ -1,6 +1,6 @@
 
 body{
-  background-color: #202125 !important;
+  background-color: #54545448 !important;
 }
 .heading {
   text-align: center;
@@ -22,6 +22,8 @@ body{
     width: 350px;
     transform: scale(1.0);
     transition: transform 0.4s ease;
+    border-radius: 12px;
+    border: 0.1px dotted #001a37;
   }
   
   .img-box {
@@ -34,6 +36,7 @@ body{
     color: white;
     position: relative;
     background-color: white;
+    border-radius: 12px;
   }
   
   .caption {
