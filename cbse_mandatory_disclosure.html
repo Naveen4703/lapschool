@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Contact Us - LAP School</title>
+    <title>Mission & Vision LAP School</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,6 +29,93 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
+
+    <style>
+        
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        .main-container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        .animated-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            min-width: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animated-table thead tr {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .animated-table th, .animated-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        
+        .animated-table tbody tr:hover {
+            background-color: #f1f1f1;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .animated-table tbody tr {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInUp 0.5s ease-in-out forwards;
+        }
+
+        .animated-table tbody tr:nth-child(1) { animation-delay: 0.1s; }
+        .animated-table tbody tr:nth-child(2) { animation-delay: 0.2s; }
+        .animated-table tbody tr:nth-child(3) { animation-delay: 0.3s; }
+        .animated-table tbody tr:nth-child(4) { animation-delay: 0.4s; }
+        .animated-table tbody tr:nth-child(5) { animation-delay: 0.5s; }
+
+        @media (max-width: 768px) {
+            .animated-table {
+                font-size: 16px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+    </style>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -52,7 +139,7 @@
 	<header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container-fluid">
-                <a hidden class="navbar-brand" href="index.html"><img src="" alt="image"></a>
+                <a hidden class="navbar-brand" href="index.html"><img src="" alt="img"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -62,12 +149,12 @@
                     <ul class="navbar-nav">
                         <li><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item dropdown"> <!-- Added dropdown class to create a dropdown menu -->
-                            <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 About us
                             </a>
                             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <a class="dropdown-item" href="about.html">Our School</a> 
-                                <a class="dropdown-item" href="mission-vision.html">Mission  & Vision</a> 
+                                <a class="dropdown-item active" href="mission-vision.html">Mission  & Vision</a> 
                                 <a class="dropdown-item">PES</a>
                                 <a class="dropdown-item" href="chairman-message.html">Chairman Message</a>
                                 <a class="dropdown-item" href="correspondent-message.html">Correspondent Message</a>
@@ -81,7 +168,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="academicsDropdown">
                                 <a class="dropdown-item" href="curriculum.html">Curriculum</a> 
-                                <a class="dropdown-item" href="faculty.html">Faculty</a> 
+                                <a class="dropdown-item" href="faculty.html">Faculty</a>  
                             </div>
                         </li>
                         <li class="nav-item dropdown"> 
@@ -111,7 +198,7 @@
                                 Infrastructure
                             </a>
                             <div class="dropdown-menu" aria-labelledby="infraDropdown">
-                                <a class="dropdown-item" href="#">Our Campus</a>
+                               <a class="dropdown-item" href="#">Our Campus</a>
                                 <a class="dropdown-item" href="#">Student Engagement Facilities</a> 
                                 <a class="dropdown-item" href="sports-facility.html">Sports Facilities</a> 
                                 <a class="dropdown-item" href="transport-facility.html">Transport Facilities</a>
@@ -135,12 +222,12 @@
                                 Media
                             </a>
                             <div class="dropdown-menu" aria-labelledby="mediaDropdown">
-                                <a class="dropdown-item" href="gallery.html">Gallery</a> 
+                                <a class="dropdown-item" href="gallery.html">Gallery</a>
                                 <a class="dropdown-item" href="testimonials.html">Testimonials</a> 
                             </div>
                         </li>
                         <li><a class="nav-link" href="best-school-in-gudur.html">Contact Us</a></li>
-                        <li><a class="nav-link active" href="#">Alumini</a></li>
+                        <li><a class="nav-link" href="alumini.html">Alumini</a></li>
                     </ul>
                 </div>
                 <div hidden class="search-box">
@@ -161,7 +248,7 @@
 	      <div class="row">
 		      <div class="col-12">
 			     <div class="full">
-				     <h3>ALUMINI</h3>
+				     <h3>Little Angels Public School</h3>
 				 </div>
 			  </div>
 		  </div>
@@ -169,45 +256,204 @@
 	</section>
 	
 	<!-- end section -->
-   
-	<!-- section -->
-    <div class="section layout_padding contact_section" style="background:#f6f6f6;">
-        <div class="container">
-               <div class="row">
-                 <div class="col-lg-8 col-md-8 col-sm-12">
-				    <div class="full float-right_img">
-                        <img src="images/gallery/lap-imgs/DSC07049.jpg" alt="#">
-                    </div>
-                 </div>
-				 <div class="col-lg-4 col-md-4 col-sm-12">
-				    <div class="contact_form">
-					    <form id="contactForm">
-						   <fieldset>
-						       <div class="full field">
-							      <input type="text" placeholder="Your Name" name="Name" id="Name" />
-							   </div>
-							   <div class="full field">
-								<input type="email" placeholder="Year of passed out" name="year" id="Email">
-							   </div>
-							   <div class="full field">
-							      <input type="phn" placeholder="Phone Number" name="Number" id="Number"/>
-							   </div>
-                               <div class="full field">
-                                <input type="text" placeholder="Email Id" name="mail" id="Number"/>
-                               </div>
-							   <div class="full field">
-							      <input type="text" placeholder="Present Working Position" name="Message" id="Message">
-							   </div>
-							   <div class="full field">
-							      <div class="center"><button>Send</button></div>
-							   </div>
-						   </fieldset>
-						</form>
-					</div>
-                 </div>
-               </div>			  
-           </div>
+
+    <div class="main-container">
+        <h1 class="title">CBSE Mandatory Public Disclosure</h1>
+
+        <div class="table-container">
+            <h2>General Information</h2>
+            <table class="animated-table">
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Information</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Name of the School</td>
+                        <td>Bloom Public School</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Affiliation Number</td>
+                        <td>2730163</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>School Code</td>
+                        <td>85217</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Complete Address with Pin Code</td>
+                        <td>C-8, Vasant Kunj, New Delhi - 110070</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Principal Name</td>
+                        <td>Mrs. Ritu Mehta</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Principal Qualification</td>
+                        <td>M.Sc., B.Ed.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>School Email ID</td>
+                        <td>information@bloompublicschool.org</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Contact Details</td>
+                        <td>+91-93107-09248, +91-8826-283167</td>
+                    </tr>
+     
+            </table>
         </div>
+
+        <div class="table-container">
+            <h2>Staff Details</h2>
+            <table class="animated-table">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Information</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Principal</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Total No. of Teachers</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>PGT</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>TGT</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>PRT</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>NTT</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>PET</td>
+                    <td>03</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Teachers Section Ratio</td>
+                    <td>1:7</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Details of Special Educator</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Details of Counsellor and Wellness Teacher</td>
+                    <td>01</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-container"> 
+            <h2>School Infrastructure</h2>
+            <table class="animated-table">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Information</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Total Campus Area of the School (in sq/mtr)</td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>No. of Class Rooms</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>No. of Laboratories including Computer Labs</td>
+                    <td>05</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Internet Facility (Y/N)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>No. of Girls Toilets</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>No. of Boys Toilets</td>
+                    <td>32+17</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Link of YouTube Video of the Inspection of School Covering the Infrastructure of the School</td>
+                    <td><a href="#">CBSE Inspection</a></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+   
+
+	<!-- section -->
+   <!-- <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>Popular </span>Courses</h2>
+                        </div>
+					  </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="full blog_img_popular">
+                       <img class="img-responsive" src="images/p1.png" alt="#" /> 
+					   <h4>Financial Accounting</h4>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="images/p2.png" alt="#" />
+						<h4>Managerial Accounting</h4>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="images/p3.png" alt="#" />
+						<h4>Intermediate Accounting</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 	<!-- end section -->
     <!-- Start Footer -->
     <footer class="footer-box">
@@ -277,24 +523,6 @@
     <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
-	<script>
-		window.addEventListener("load", function() {
-		const form = document.getElementById('contactForm');
-		form.addEventListener("submit", function(e) {
-			e.preventDefault();
-			const data = new FormData(form);
-			const action = 'https://script.google.com/macros/s/AKfycbznq_0QvRgfnO1veS6Ir-qF0htSsPQql8CwdfczD4CZTqTykDi1yMp_qyJmVF4Q__kuLw/exec';
-			fetch(action, {
-			method: 'POST',
-			body: data,
-			})
-			.then(() => {
-			alert("Success!");
-			})
-		});
-		});
-
-	</script>
     <script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
